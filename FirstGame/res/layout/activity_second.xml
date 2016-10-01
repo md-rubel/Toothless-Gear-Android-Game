@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rubel.firstgame.GameActivity" >
+
+    <com.rubel.firstgame.GameView 
+        android:id="@+id/myGameView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/buttonLeft"
+                    android:layout_width="@dimen/botton_size"
+                    android:layout_height="@dimen/botton_size"
+                    android:background="@drawable/left" />
+                
+                <Button
+                    android:id="@+id/buttonRestart"
+                    android:layout_width="@dimen/botton_size"
+                    android:layout_height="@dimen/botton_size"
+                    android:background="@drawable/refresh_button"
+                    android:onClick="restartGame" />
+                
+                <Button
+                    android:id="@+id/buttonRight"
+                    android:layout_width="@dimen/botton_size"
+                    android:layout_height="@dimen/botton_size"
+                    android:background="@drawable/right" />
+                
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right" >
+
+                <Button
+                    android:id="@+id/buttonPause"
+                    android:layout_width="@dimen/botton_size"
+                    android:layout_height="@dimen/botton_size"
+                    android:background="@drawable/lock"
+                    android:onClick="pauseGame" />
+                
+                <Button
+                    android:id="@+id/buttonStop"
+                    android:layout_width="@dimen/botton_size"
+                    android:layout_height="@dimen/botton_size"
+                    android:background="@drawable/quit"
+                    android:onClick="stopGame" />
+                
+                <Button
+                    android:id="@+id/buttonInfo"
+                    android:layout_width="@dimen/botton_size"
+                    android:layout_height="@dimen/botton_size"
+                    android:background="@drawable/info"
+                    android:onClick="toothlessGear" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
